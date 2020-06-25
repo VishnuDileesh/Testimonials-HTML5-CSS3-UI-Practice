@@ -10,3 +10,63 @@ body {
 	align-items: center;
 	height: 100vh;
 }
+
+.container {
+	background-color: white;
+	display: flex;
+	border-radius: 10px;
+	max-height: 600px;
+	margin: auto;
+	box-shadow: 8px 8px 10px 5px #ebf2f9;
+}
+
+.img-sec {
+	flex: 1;
+	display: flex;
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+}
+
+.img-sec img {
+	width: 100%;
+}
+
+.comment-sec {
+	padding: 3.75em;
+	flex: 1;
+	margin: auto;
+}
+
+.comment-sec img {
+	width: 5%;
+}
+
+.comment-sec h1 {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.comment-sec h2 {
+	margin-top: 3.125em;
+	font-size: 1.2rem;
+	margin-bottom: 0.1875em;
+}
+
+.comment-sec p {
+	color: #969197;
+	margin-top: auto;
+}
+
+@media (max-width: 680px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.img-sec {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.img-sec img {
+		object-fit: cover;
+	}
+}
